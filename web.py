@@ -15,5 +15,5 @@ def predict():
    output=round(output,2)
    return render_template ('result.html',prediction_text="Congrats!!...You are eligible for a Salary of Rs.{}".format(output))
 if __name__=='__main__':
-    app.run()
+    app.run(port=8000)
 
